@@ -9,5 +9,32 @@
 	<atom:link href="https://ikingye.github.io/study-php/docs/appendix/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>4.1 教程</title>
+      <link>https://ikingye.github.io/study-php/docs/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-php/docs/appendix/tutorial/</guid>
+      <description>PHP 教程 #  基础 #   进阶 #  高阶 #  </description>
+    </item>
+    
+    <item>
+      <title>4.2 面试题</title>
+      <link>https://ikingye.github.io/study-php/docs/appendix/interview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-php/docs/appendix/interview/</guid>
+      <description>PHP 面试题 #  基础题 #  进阶题 #  高阶题 #  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://ikingye.github.io/study-php/docs/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-php/docs/appendix/attention/</guid>
+      <description>关注项目 #  </description>
+    </item>
+    
   </channel>
 </rss>
