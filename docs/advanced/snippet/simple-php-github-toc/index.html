@@ -9,12 +9,12 @@
 <meta property="og:description" content="生成 Github Readme 文件 TOC 目录 的简单脚本 #  &lt;?php /** * site: https://github.com/xingshaocheng/simple-php-github-toc */ if(count($argv) &lt; 2){ exit(&#34;Please input github file url, eg &#39;php github-toc.php https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#39;.\n&#34;); } $url = $argv[1]; #$url = &#34;https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#34;;  function get_anchor($content){ preg_match_all(&#34;/href=\&#34;(.*)\&#34;&gt;/iUs&#34;, $content, $anchor_arr); if(count($anchor_arr) &gt; 0){ return $anchor_arr[1][0]; } return &#34;&#34;; } function get_title($content){ preg_match_all(&#34;/a\&gt;(.*)$/iUs&#34;, $content, $title_arr); if(count($title_arr) &gt; 0){ return trim($title_arr[1][0]); } return &#34;&#34;; } $content = file_get_contents($url); preg_match_all(&#34;/&lt;article(.*)&lt;\/article&gt;/iUs&#34;, $content, $article); $article_html = $article[0][0]; preg_match_all(&#34;/&lt;h([1-6])&gt;(." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ikingye.github.io/study-php/docs/advanced/snippet/simple-php-github-toc/" />
-
+<meta property="article:modified_time" content="2020-07-16T18:07:54+08:00" />
 <title>Markdown 文件生成 TOC | PHP 学习笔记</title>
 <link rel="manifest" href="/study-php/manifest.json">
 <link rel="icon" href="/study-php/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/study-php/book.min.054d088be523033861c169923260cc3eacd88fa7d58c8be9c5071b5a83323017.css" integrity="sha256-BU0Ii&#43;UjAzhhwWmSMmDMPqzYj6fVjIvpxQcbWoMyMBc=">
-<script defer src="/study-php/en.search.min.cc63c52762a8324089d6f9578631f07bc61d0b1ba5ca698e2fef98d610c46ce0.js" integrity="sha256-zGPFJ2KoMkCJ1vlXhjHwe8YdCxulymmOL&#43;&#43;Y1hDEbOA="></script>
+<script defer src="/study-php/en.search.min.34f80cdf0b7017cf164b6602a0d32b38c511d708118348ef636f3a01c7e08da1.js" integrity="sha256-NPgM3wtwF88WS2YCoNMrOMUR1wgRg0jvY286AcfgjaE="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -589,6 +589,12 @@ $len <span style="color:#f92672">=</span> <span style="color:#a6e22e">count</spa
   <div class="flex flex-wrap justify-between">
 
 
+
+  <div><a class="flex align-center" href="https://github.com/ikingye/note/commit/49e365d8e74d3e1fe86be916c94270b2b2dc8f70" title='Last modified by yewang | 2020-07-16' target="_blank" rel="noopener">
+      <img src="/study-php/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2020-07-16</span>
+    </a>
+  </div>
 
 
 
