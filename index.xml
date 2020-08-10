@@ -73,6 +73,15 @@
     </item>
     
     <item>
+      <title>GC</title>
+      <link>https://ikingye.github.io/study-php/docs/code/runtime/gc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ikingye.github.io/study-php/docs/code/runtime/gc/</guid>
+      <description>PHP GC #  Garbage Collection</description>
+    </item>
+    
+    <item>
       <title>版本</title>
       <link>https://ikingye.github.io/study-php/docs/basic/other/version/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
