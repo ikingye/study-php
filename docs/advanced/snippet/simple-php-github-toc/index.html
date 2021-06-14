@@ -2,20 +2,22 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.71.0" />
+  <meta name="generator" content="Hugo 0.83.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="生成 Github Readme 文件 TOC 目录 的简单脚本 #  &lt;?php /** * site: https://github.com/xingshaocheng/simple-php-github-toc */ if(count($argv) &lt; 2){ exit(&#34;Please input github file url, eg &#39;php github-toc.php https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#39;.\n&#34;); } $url = $argv[1]; #$url = &#34;https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#34;;  function get_anchor($content){ preg_match_all(&#34;/href=\&#34;(.*)\&#34;&gt;/iUs&#34;, $content, $anchor_arr); if(count($anchor_arr) &gt; 0){ return $anchor_arr[1][0]; } return &#34;&#34;; } function get_title($content){ preg_match_all(&#34;/a\&gt;(.*)$/iUs&#34;, $content, $title_arr); if(count($title_arr) &gt; 0){ return trim($title_arr[1][0]); } return &#34;&#34;; } $content = file_get_contents($url); preg_match_all(&#34;/&lt;article(.*)&lt;\/article&gt;/iUs&#34;, $content, $article); $article_html = $article[0][0]; preg_match_all(&#34;/&lt;h([1-6])&gt;(.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Markdown 文件生成 TOC" />
 <meta property="og:description" content="生成 Github Readme 文件 TOC 目录 的简单脚本 #  &lt;?php /** * site: https://github.com/xingshaocheng/simple-php-github-toc */ if(count($argv) &lt; 2){ exit(&#34;Please input github file url, eg &#39;php github-toc.php https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#39;.\n&#34;); } $url = $argv[1]; #$url = &#34;https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#34;;  function get_anchor($content){ preg_match_all(&#34;/href=\&#34;(.*)\&#34;&gt;/iUs&#34;, $content, $anchor_arr); if(count($anchor_arr) &gt; 0){ return $anchor_arr[1][0]; } return &#34;&#34;; } function get_title($content){ preg_match_all(&#34;/a\&gt;(.*)$/iUs&#34;, $content, $title_arr); if(count($title_arr) &gt; 0){ return trim($title_arr[1][0]); } return &#34;&#34;; } $content = file_get_contents($url); preg_match_all(&#34;/&lt;article(.*)&lt;\/article&gt;/iUs&#34;, $content, $article); $article_html = $article[0][0]; preg_match_all(&#34;/&lt;h([1-6])&gt;(." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ikingye.github.io/study-php/docs/advanced/snippet/simple-php-github-toc/" />
-<meta property="article:modified_time" content="2020-07-16T18:07:54+08:00" />
+<meta property="og:url" content="https://ikingye.github.io/study-php/docs/advanced/snippet/simple-php-github-toc/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2020-07-16T18:07:54&#43;08:00" />
+
 <title>Markdown 文件生成 TOC | PHP 学习笔记</title>
 <link rel="manifest" href="/study-php/manifest.json">
 <link rel="icon" href="/study-php/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/study-php/book.min.47e4577a72cc9340ba815ebf8200a2e1642b6e7a28caf0622c921ba9d7c4478e.css" integrity="sha256-R&#43;RXenLMk0C6gV6/ggCi4WQrbnooyvBiLJIbqdfER44=">
-<script defer src="/study-php/en.search.min.f9a9f681871d5d14af412c98ace84dde58100677afbb675a87c22af6027a8172.js" integrity="sha256-&#43;an2gYcdXRSvQSyYrOhN3lgQBnevu2dah8Iq9gJ6gXI="></script>
+<link rel="stylesheet" href="/study-php/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
+<script defer src="/study-php/en.search.min.242f0086b2819ca113a5e5c3d33bba50c252fd1688717364bb9612e53c73854a.js" integrity="sha256-JC8AhrKBnKETpeXD0zu6UMJS/RaIcXNku5YS5TxzhUo="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -597,7 +599,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -649,7 +651,7 @@ https://github.com/alex-shpak/hugo-book
   生成 Github Readme 文件 TOC 目录 的简单脚本
   <a class="anchor" href="#%e7%94%9f%e6%88%90-github-readme-%e6%96%87%e4%bb%b6-toc-%e7%9b%ae%e5%bd%95-%e7%9a%84%e7%ae%80%e5%8d%95%e8%84%9a%e6%9c%ac">#</a>
 </h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 <span style="color:#e6db74">/**
 </span><span style="color:#e6db74"> * site: https://github.com/xingshaocheng/simple-php-github-toc
 </span><span style="color:#e6db74"> */</span>

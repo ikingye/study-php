@@ -4,11 +4,7 @@
     <title>2.4 代码片段 on PHP 学习笔记</title>
     <link>https://ikingye.github.io/study-php/docs/advanced/snippet/</link>
     <description>Recent content in 2.4 代码片段 on PHP 学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://ikingye.github.io/study-php/docs/advanced/snippet/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://ikingye.github.io/study-php/docs/advanced/snippet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown 文件生成 TOC</title>
       <link>https://ikingye.github.io/study-php/docs/advanced/snippet/simple-php-github-toc/</link>
