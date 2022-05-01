@@ -2,12 +2,12 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta name="generator" content="Hugo 0.87.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="生成 Github Readme 文件 TOC 目录 的简单脚本 #  &lt;?php /** * site: https://github.com/xingshaocheng/simple-php-github-toc */ if(count($argv) &lt; 2){ exit(&#34;Please input github file url, eg &#39;php github-toc.php https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#39;.\n&#34;); } $url = $argv[1]; #$url = &#34;https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#34;;  function get_anchor($content){ preg_match_all(&#34;/href=\&#34;(.*)\&#34;&gt;/iUs&#34;, $content, $anchor_arr); if(count($anchor_arr) &gt; 0){ return $anchor_arr[1][0]; } return &#34;&#34;; } function get_title($content){ preg_match_all(&#34;/a\&gt;(.*)$/iUs&#34;, $content, $title_arr); if(count($title_arr) &gt; 0){ return trim($title_arr[1][0]); } return &#34;&#34;; } $content = file_get_contents($url); preg_match_all(&#34;/&lt;article(.*)&lt;\/article&gt;/iUs&#34;, $content, $article); $article_html = $article[0][0]; preg_match_all(&#34;/&lt;h([1-6])&gt;(.">
+<meta name="description" content="生成 Github Readme 文件 TOC 目录 的简单脚本 #  &lt;?php /** * site: https://github.com/xingshaocheng/simple-php-github-toc */  if(count($argv) &lt; 2){  exit(&#34;Please input github file url, eg &#39;php github-toc.php https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#39;.\n&#34;); }  $url = $argv[1];  #$url = &#34;https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#34;;   function get_anchor($content){  preg_match_all(&#34;/href=\&#34;(.*)\&#34;&gt;/iUs&#34;, $content, $anchor_arr);  if(count($anchor_arr) &gt; 0){  return $anchor_arr[1][0];  }  return &#34;&#34;; }  function get_title($content){  preg_match_all(&#34;/a\&gt;(.*)$/iUs&#34;, $content, $title_arr);  if(count($title_arr) &gt; 0){  return trim($title_arr[1][0]);  }  return &#34;&#34;; }  $content = file_get_contents($url);  preg_match_all(&#34;/&lt;article(.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Markdown 文件生成 TOC" />
-<meta property="og:description" content="生成 Github Readme 文件 TOC 目录 的简单脚本 #  &lt;?php /** * site: https://github.com/xingshaocheng/simple-php-github-toc */ if(count($argv) &lt; 2){ exit(&#34;Please input github file url, eg &#39;php github-toc.php https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#39;.\n&#34;); } $url = $argv[1]; #$url = &#34;https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#34;;  function get_anchor($content){ preg_match_all(&#34;/href=\&#34;(.*)\&#34;&gt;/iUs&#34;, $content, $anchor_arr); if(count($anchor_arr) &gt; 0){ return $anchor_arr[1][0]; } return &#34;&#34;; } function get_title($content){ preg_match_all(&#34;/a\&gt;(.*)$/iUs&#34;, $content, $title_arr); if(count($title_arr) &gt; 0){ return trim($title_arr[1][0]); } return &#34;&#34;; } $content = file_get_contents($url); preg_match_all(&#34;/&lt;article(.*)&lt;\/article&gt;/iUs&#34;, $content, $article); $article_html = $article[0][0]; preg_match_all(&#34;/&lt;h([1-6])&gt;(." />
+<meta property="og:description" content="生成 Github Readme 文件 TOC 目录 的简单脚本 #  &lt;?php /** * site: https://github.com/xingshaocheng/simple-php-github-toc */  if(count($argv) &lt; 2){  exit(&#34;Please input github file url, eg &#39;php github-toc.php https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#39;.\n&#34;); }  $url = $argv[1];  #$url = &#34;https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#34;;   function get_anchor($content){  preg_match_all(&#34;/href=\&#34;(.*)\&#34;&gt;/iUs&#34;, $content, $anchor_arr);  if(count($anchor_arr) &gt; 0){  return $anchor_arr[1][0];  }  return &#34;&#34;; }  function get_title($content){  preg_match_all(&#34;/a\&gt;(.*)$/iUs&#34;, $content, $title_arr);  if(count($title_arr) &gt; 0){  return trim($title_arr[1][0]);  }  return &#34;&#34;; }  $content = file_get_contents($url);  preg_match_all(&#34;/&lt;article(." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://kingye.me/study-php/docs/advanced/snippet/simple-php-github-toc/" /><meta property="article:section" content="docs" />
 
@@ -17,7 +17,7 @@
 <link rel="manifest" href="/study-php/manifest.json">
 <link rel="icon" href="/study-php/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/study-php/book.min.e7360c502a84143addd190981586c3e3e8f082b67f6799dc9f237a599fe0be5a.css" integrity="sha256-5zYMUCqEFDrd0ZCYFYbD4&#43;jwgrZ/Z5ncnyN6WZ/gvlo=">
-<script defer src="/study-php/en.search.min.f66cd526d05dd6d2a43a1aac511ecb39f98c59b994eeab3cd88985468a549b61.js" integrity="sha256-9mzVJtBd1tKkOhqsUR7LOfmMWbmU7qs82ImFRopUm2E="></script>
+<script defer src="/study-php/en.search.min.4f1f708db9ded16576ebe81ca80c3254f6d224ea0ef8aa07e280dec58eb11a14.js" integrity="sha256-Tx9wjbne0WV26&#43;gcqAwyVPbSJOoO&#43;KoH4oDexY6xGhQ="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -586,7 +586,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+  <script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -638,61 +638,60 @@ https://github.com/alex-shpak/hugo-book
   生成 Github Readme 文件 TOC 目录 的简单脚本
   <a class="anchor" href="#%e7%94%9f%e6%88%90-github-readme-%e6%96%87%e4%bb%b6-toc-%e7%9b%ae%e5%bd%95-%e7%9a%84%e7%ae%80%e5%8d%95%e8%84%9a%e6%9c%ac">#</a>
 </h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
-<span style="color:#e6db74">/**
-</span><span style="color:#e6db74"> * site: https://github.com/xingshaocheng/simple-php-github-toc
-</span><span style="color:#e6db74"> */</span>
-
-<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">count</span>($argv) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>){
-        <span style="color:#66d9ef">exit</span>(<span style="color:#e6db74">&#34;Please input github file url, eg &#39;php github-toc.php https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#39;.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
-}
-
-$url <span style="color:#f92672">=</span> $argv[<span style="color:#ae81ff">1</span>];
-
-<span style="color:#75715e">#$url = &#34;https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#34;;
-</span><span style="color:#75715e"></span>
-
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">get_anchor</span>($content){
-        <span style="color:#a6e22e">preg_match_all</span>(<span style="color:#e6db74">&#34;/href=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">(.*)</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&gt;/iUs&#34;</span>,  $content, $anchor_arr);
-        <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">count</span>($anchor_arr) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>){
-                <span style="color:#66d9ef">return</span> $anchor_arr[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">0</span>];
-        }
-        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&#34;</span>;
-}
-
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">get_title</span>($content){
-        <span style="color:#a6e22e">preg_match_all</span>(<span style="color:#e6db74">&#34;/a\&gt;(.*)$/iUs&#34;</span>,  $content, $title_arr);
-        <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">count</span>($title_arr) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>){
-                <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">trim</span>($title_arr[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">0</span>]);
-        }
-        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&#34;</span>;
-}
-
-$content <span style="color:#f92672">=</span> <span style="color:#a6e22e">file_get_contents</span>($url);
-
-<span style="color:#a6e22e">preg_match_all</span>(<span style="color:#e6db74">&#34;/&lt;article(.*)&lt;\/article&gt;/iUs&#34;</span>, $content, $article);
-
-$article_html <span style="color:#f92672">=</span> $article[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span>];
-
-<span style="color:#a6e22e">preg_match_all</span>(<span style="color:#e6db74">&#34;/&lt;h([1-6])&gt;(.*)&lt;\/h[1-6]{1}&gt;/iUs&#34;</span>,  $article_html, $each_head);
-
-$len <span style="color:#f92672">=</span> <span style="color:#a6e22e">count</span>($each_head[<span style="color:#ae81ff">0</span>]);
-<span style="color:#66d9ef">for</span>($i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;$i <span style="color:#f92672">&lt;</span> $len; $i<span style="color:#f92672">++</span>){
-        $level <span style="color:#f92672">=</span> $each_head[<span style="color:#ae81ff">1</span>][$i];
-        $each_content <span style="color:#f92672">=</span> $each_head[<span style="color:#ae81ff">2</span>][$i];
-        $anchor <span style="color:#f92672">=</span> <span style="color:#a6e22e">get_anchor</span>($each_content);
-        $title <span style="color:#f92672">=</span> <span style="color:#a6e22e">get_title</span>($each_content);
-        <span style="color:#66d9ef">echo</span> <span style="color:#a6e22e">str_repeat</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&#34;</span>,($level<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)),<span style="color:#e6db74">&#34;* &#34;</span>,<span style="color:#e6db74">&#34;[</span><span style="color:#e6db74">${</span>title}](${url}${anchor<span style="color:#e6db74">}</span><span style="color:#e6db74">)</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
-}
-
-<span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74"> TOC generated by [simple-php-github-toc](https://github.com/xingshaocheng/simple-php-github-toc) </span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74"> &#34;</span>;
-
-</code></pre></div><h2 id="参考">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * site: https://github.com/xingshaocheng/simple-php-github-toc
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">count</span>($argv) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>){
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">exit</span>(<span style="color:#e6db74">&#34;Please input github file url, eg &#39;php github-toc.php https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#39;.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$url <span style="color:#f92672">=</span> $argv[<span style="color:#ae81ff">1</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#$url = &#34;https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&#34;;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">get_anchor</span>($content){
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">preg_match_all</span>(<span style="color:#e6db74">&#34;/href=</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">(.*)</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&gt;/iUs&#34;</span>,  $content, $anchor_arr);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">count</span>($anchor_arr) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>){
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> $anchor_arr[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">get_title</span>($content){
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">preg_match_all</span>(<span style="color:#e6db74">&#34;/a\&gt;(.*)$/iUs&#34;</span>,  $content, $title_arr);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">count</span>($title_arr) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>){
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">trim</span>($title_arr[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">0</span>]);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$content <span style="color:#f92672">=</span> <span style="color:#a6e22e">file_get_contents</span>($url);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">preg_match_all</span>(<span style="color:#e6db74">&#34;/&lt;article(.*)&lt;\/article&gt;/iUs&#34;</span>, $content, $article);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$article_html <span style="color:#f92672">=</span> $article[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">preg_match_all</span>(<span style="color:#e6db74">&#34;/&lt;h([1-6])&gt;(.*)&lt;\/h[1-6]{1}&gt;/iUs&#34;</span>,  $article_html, $each_head);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$len <span style="color:#f92672">=</span> <span style="color:#a6e22e">count</span>($each_head[<span style="color:#ae81ff">0</span>]);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span>($i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;$i <span style="color:#f92672">&lt;</span> $len; $i<span style="color:#f92672">++</span>){
+</span></span><span style="display:flex;"><span>        $level <span style="color:#f92672">=</span> $each_head[<span style="color:#ae81ff">1</span>][$i];
+</span></span><span style="display:flex;"><span>        $each_content <span style="color:#f92672">=</span> $each_head[<span style="color:#ae81ff">2</span>][$i];
+</span></span><span style="display:flex;"><span>        $anchor <span style="color:#f92672">=</span> <span style="color:#a6e22e">get_anchor</span>($each_content);
+</span></span><span style="display:flex;"><span>        $title <span style="color:#f92672">=</span> <span style="color:#a6e22e">get_title</span>($each_content);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">echo</span> <span style="color:#a6e22e">str_repeat</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&#34;</span>,($level<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)),<span style="color:#e6db74">&#34;* &#34;</span>,<span style="color:#e6db74">&#34;[</span><span style="color:#e6db74">${</span>title}](${url}${anchor<span style="color:#e6db74">}</span><span style="color:#e6db74">)</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74"> TOC generated by [simple-php-github-toc](https://github.com/xingshaocheng/simple-php-github-toc) </span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74"> &#34;</span>;
+</span></span></code></pre></div><h2 id="参考">
   参考
   <a class="anchor" href="#%e5%8f%82%e8%80%83">#</a>
 </h2>
-<a href="https://github.com/xingshaocheng/simple-php-github-toc">xingshaocheng/simple-php-github-toc</a> <h3 id="xingshaochengsimple-php-github-tochttpsgithubcomxingshaochengsimple-php-github-toc-github-starshttpsimgshieldsiogithubstarsxingshaochengsimple-php-github-tocsvg">
-  <img src="https://img.shields.io/github/stars/xingshaocheng/simple-php-github-toc.svg" alt="Github stars" />
+<h3 id="xingshaochengsimple-php-github-tochttpsgithubcomxingshaochengsimple-php-github-toc-github-starshttpsimgshieldsiogithubstarsxingshaochengsimple-php-github-tocsvg">
+  <a href="https://github.com/xingshaocheng/simple-php-github-toc">xingshaocheng/simple-php-github-toc</a> <img src="https://img.shields.io/github/stars/xingshaocheng/simple-php-github-toc.svg" alt="Github stars" />
   <a class="anchor" href="#xingshaochengsimple-php-github-tochttpsgithubcomxingshaochengsimple-php-github-toc-github-starshttpsimgshieldsiogithubstarsxingshaochengsimple-php-github-tocsvg">#</a>
 </h3>
 </article>
