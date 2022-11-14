@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>首页 on PHP 学习笔记</title>
+    <link>https://kingye.me/study-php/</link>
+    <description>Recent content in 首页 on PHP 学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://kingye.me/study-php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关键字</title>
+      <link>https://kingye.me/study-php/docs/basic/ref/keyword/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/study-php/docs/basic/ref/keyword/</guid>
+      <description>PHP 关键字 #  </description>
+    </item>
+    
+    <item>
+      <title>数据结构</title>
+      <link>https://kingye.me/study-php/docs/basic/ref/datastruct/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/study-php/docs/basic/ref/datastruct/</guid>
+      <description>PHP 数据结构 #  </description>
+    </item>
+    
+    <item>
+      <title>4.1 教程</title>
+      <link>https://kingye.me/study-php/docs/appendix/tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/study-php/docs/appendix/tutorial/</guid>
+      <description>PHP 教程 #  基础 #   进阶 #  PHP Internals Book #  phpinternalsbook/PHP-Internals-Book https://www.phpinternalsbook.com/
+中文翻译：https://learnku.com/docs/php-internals/php7</description>
+    </item>
+    
+    <item>
+      <title>4.2 面试题</title>
+      <link>https://kingye.me/study-php/docs/appendix/interview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/study-php/docs/appendix/interview/</guid>
+      <description>PHP 面试题 #  基础题 #  进阶题 #  </description>
+    </item>
+    
+    <item>
+      <title>4.3 关注项目</title>
+      <link>https://kingye.me/study-php/docs/appendix/attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/study-php/docs/appendix/attention/</guid>
+      <description>关注项目 #  </description>
+    </item>
+    
+    <item>
+      <title>Markdown 文件生成 TOC</title>
+      <link>https://kingye.me/study-php/docs/advanced/snippet/simple-php-github-toc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/study-php/docs/advanced/snippet/simple-php-github-toc/</guid>
+      <description>生成 Github Readme 文件 TOC 目录 的简单脚本 #  &amp;lt;?php /** * site: https://github.com/xingshaocheng/simple-php-github-toc */  if(count($argv) &amp;lt; 2){  exit(&amp;#34;Please input github file url, eg &amp;#39;php github-toc.php https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&amp;#39;.\n&amp;#34;); }  $url = $argv[1];  #$url = &amp;#34;https://github.com/xingshaocheng/architect-awesome/blob/master/README.md&amp;#34;;   function get_anchor($content){  preg_match_all(&amp;#34;/href=\&amp;#34;(.*)\&amp;#34;&amp;gt;/iUs&amp;#34;, $content, $anchor_arr);  if(count($anchor_arr) &amp;gt; 0){  return $anchor_arr[1][0];  }  return &amp;#34;&amp;#34;; }  function get_title($content){  preg_match_all(&amp;#34;/a\&amp;gt;(.*)$/iUs&amp;#34;, $content, $title_arr);  if(count($title_arr) &amp;gt; 0){  return trim($title_arr[1][0]);  }  return &amp;#34;&amp;#34;; }  $content = file_get_contents($url);  preg_match_all(&amp;#34;/&amp;lt;article(.</description>
+    </item>
+    
+    <item>
+      <title>GC</title>
+      <link>https://kingye.me/study-php/docs/code/runtime/gc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/study-php/docs/code/runtime/gc/</guid>
+      <description>PHP GC #  Garbage Collection</description>
+    </item>
+    
+    <item>
+      <title>版本</title>
+      <link>https://kingye.me/study-php/docs/basic/other/version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://kingye.me/study-php/docs/basic/other/version/</guid>
+      <description>PHP 版本 #  php/php-src 版本控制 #   版本历史 #  8.0 #  8.0.0 (2020) #    7.4 #  7.4.8 (2020-07-09) #  7.4.0 (2019-11-28) #   7.3 #   7.2 #   7.1 #   7.0 #    5.6 #  5.6.40 (2019-01-10) #  5.5 #  5.4 #  5.3 #  5.2 #  5.1 #  5.</description>
+    </item>
+    
+  </channel>
+</rss>
