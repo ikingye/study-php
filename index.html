@@ -5,7 +5,9 @@
   <meta name="generator" content="Hugo 0.121.1">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
+<meta name="description" content="PHP # 配置文件 # $ tree . ├── conf.d │ └── ext-opcache.ini ├── pear.conf ├── php-fpm.conf ├── php-fpm.d │ └── www.conf └── php.ini 2 directories, 5 files php.ini # php.ini 是 PHP 解析器的配置文件
+php-fpm.conf # php-fpm 是 PHP-FPM 进程管理器的配置文件
+include=/usr/local/etc/php/7.4/php-fpm.d/*.conf php-fpm.d/www.conf # # Start a new pool named &#39;www&#39;. # the variable $pool can be used in any directive and will be replaced by the # pool name (&#39;www&#39; here) [www] # The address on which to accept FastCGI requests.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="首页" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -614,7 +616,35 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#php">PHP</a>
+      <ul>
+        <li><a href="#配置文件">配置文件</a>
+          <ul>
+            <li><a href="#phpini"><code>php.ini</code></a></li>
+            <li><a href="#php-fpmconf"><code>php-fpm.conf</code></a></li>
+            <li><a href="#php-fpmdwwwconf"><code>php-fpm.d/www.conf</code></a></li>
+          </ul>
+        </li>
+        <li><a href="#composer">Composer</a>
+          <ul>
+            <li><a href="#版本范围">版本范围</a></li>
+          </ul>
+        </li>
+        <li><a href="#laravel">Laravel</a>
+          <ul>
+            <li><a href="#laravel-nova">Laravel Nova</a></li>
+            <li><a href="#laravel-forge">Laravel Forge</a></li>
+            <li><a href="#laravel-vapor">Laravel Vapor</a></li>
+            <li><a href="#laravel-valet">Laravel Valet</a></li>
+            <li><a href="#laravel-envoy">Laravel Envoy</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
 
@@ -625,7 +655,116 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article id="article" class="markdown"></article>
+  <article id="article" class="markdown"><h2 id="php">
+  PHP
+  <a class="anchor" href="#php">#</a>
+</h2>
+<h3 id="配置文件">
+  配置文件
+  <a class="anchor" href="#%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ tree
+</span></span><span style="display:flex;"><span>.
+</span></span><span style="display:flex;"><span>├── conf.d
+</span></span><span style="display:flex;"><span>│   └── ext-opcache.ini
+</span></span><span style="display:flex;"><span>├── pear.conf
+</span></span><span style="display:flex;"><span>├── php-fpm.conf
+</span></span><span style="display:flex;"><span>├── php-fpm.d
+</span></span><span style="display:flex;"><span>│   └── www.conf
+</span></span><span style="display:flex;"><span>└── php.ini
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span> directories, <span style="color:#ae81ff">5</span> files
+</span></span></code></pre></div><h4 id="phpini">
+  <code>php.ini</code>
+  <a class="anchor" href="#phpini">#</a>
+</h4>
+<p><code>php.ini</code> 是 <strong>PHP 解析器</strong>的配置文件</p>
+<h4 id="php-fpmconf">
+  <code>php-fpm.conf</code>
+  <a class="anchor" href="#php-fpmconf">#</a>
+</h4>
+<p><code>php-fpm</code> 是 <strong>PHP-FPM 进程管理器</strong>的配置文件</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>include<span style="color:#f92672">=</span>/usr/local/etc/php/7.4/php-fpm.d/*.conf
+</span></span></code></pre></div><h4 id="php-fpmdwwwconf">
+  <code>php-fpm.d/www.conf</code>
+  <a class="anchor" href="#php-fpmdwwwconf">#</a>
+</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># Start a new pool named &#39;www&#39;.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># the variable $pool can be used in any directive and will be replaced by the</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># pool name (&#39;www&#39; here)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>www<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The address on which to accept FastCGI requests.</span>
+</span></span><span style="display:flex;"><span>listen <span style="color:#f92672">=</span> 127.0.0.1:9000
+</span></span></code></pre></div><hr>
+<h3 id="composer">
+  Composer
+  <a class="anchor" href="#composer">#</a>
+</h3>
+<p>Composer 受到了 node&rsquo;s <a href="http://npmjs.org/">npm</a>  和 ruby&rsquo;s <a href="http://gembundler.com/">bundler</a>  的强烈启发</p>
+<p>运行 Composer 需要 PHP 5.3.2+ 以上版本</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># 使用加速镜像</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># https://pkg.phpcomposer.com/</span>
+</span></span><span style="display:flex;"><span>composer config -g repo.packagist composer https://packagist.phpcomposer.com
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># composer 升级</span>
+</span></span><span style="display:flex;"><span>composer selfupdate
+</span></span></code></pre></div><h4 id="版本范围">
+  版本范围
+  <a class="anchor" href="#%e7%89%88%e6%9c%ac%e8%8c%83%e5%9b%b4">#</a>
+</h4>
+<ul>
+<li>脱字符号 <code>^</code>: <em>最左侧非零数字</em>不能变
+<ul>
+<li><code>^1.2</code>: <code>1.2</code> &lt;= 版本号 &lt; <code>2.0</code></li>
+<li><code>^0.2.3</code>: <code>0.2.3</code> &lt;= 版本号 &lt; <code>0.3.0</code></li>
+<li><code>^1.2.3</code>: <code>1.2.3</code> &lt;= 版本号 &lt; <code>2.0.0</code></li>
+</ul>
+</li>
+<li>波浪号运算符 <code>~</code>: 下一个重要版本（右侧第二位不能变）
+<ul>
+<li><code>~1.2</code>: <code>1.2</code> &lt;= 版本号 &lt; <code>2.0</code></li>
+<li><code>~0.2.3</code>: <code>0.2.3</code> &lt;= 版本号 &lt; <code>0.3.0</code></li>
+<li><code>~1.2.0</code>: <code>1.2.0</code> &lt;= 版本号 &lt; <code>1.3.0</code></li>
+<li><code>~1.2.3</code>: <code>1.2.3</code> &lt;= 版本号 &lt; <code>1.3.0</code></li>
+</ul>
+</li>
+</ul>
+<p>参考：<a href="https://semver.org/lang/zh-CN/">语义化版本</a></p>
+<hr>
+<h3 id="laravel">
+  Laravel
+  <a class="anchor" href="#laravel">#</a>
+</h3>
+<h4 id="laravel-nova">
+  Laravel Nova
+  <a class="anchor" href="#laravel-nova">#</a>
+</h4>
+<p>Laravel Nova is a beautifully designed administration panel for Laravel.</p>
+<h4 id="laravel-forge">
+  Laravel Forge
+  <a class="anchor" href="#laravel-forge">#</a>
+</h4>
+<p>Laravel Hosting &amp; Instant PHP Servers</p>
+<h4 id="laravel-vapor">
+  Laravel Vapor
+  <a class="anchor" href="#laravel-vapor">#</a>
+</h4>
+<p>Laravel Vapor 是由 AWS 驱动，可以对 Laravel 程序进行无服务器部署的一项服务。
+使用 Vapor 部署你的 Laravel 项目你会深深的爱上这种简便快捷的无服务。</p>
+<h4 id="laravel-valet">
+  Laravel Valet
+  <a class="anchor" href="#laravel-valet">#</a>
+</h4>
+<p>Valet 是 Mac 极简主义者的 Laravel 开发环境。
+没有 Vagrant，没有 <code>/etc/hosts</code> 文件。
+甚至可以使用本地隧道公开分享你的站点。</p>
+<h4 id="laravel-envoy">
+  Laravel Envoy
+  <a class="anchor" href="#laravel-envoy">#</a>
+</h4>
+<p>优雅的 SSH 远程任务执行工具</p>
+</article>
  
       
 
@@ -663,6 +802,29 @@ https://github.com/alex-shpak/hugo-book
 
       
   
+  <div class="book-comments">
+<script src="https://utteranc.es/client.js"
+  repo="ikingye/study-php"
+  issue-term="pathname"
+  theme="github-light"
+  crossorigin="anonymous"
+  async
+></script>
+
+<div id="footer">
+  <p>
+    <a href="https://kingye.me">叶王</a> &copy; 2013-2024
+    版权所有。如果本文档对你有所帮助，可以<a
+      href="https://cdn.jsdelivr.net/gh/ikingye/imagehost/picgo/20200428110046.png"
+      target="_blank"
+      rel="noopener noreferrer"
+      >请作者喝饮料</a
+    >。
+  </p>
+</div>
+
+</div>
+  
  
 
       <label for="menu-control" class="hidden book-menu-overlay"></label>
@@ -673,7 +835,35 @@ https://github.com/alex-shpak/hugo-book
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#php">PHP</a>
+      <ul>
+        <li><a href="#配置文件">配置文件</a>
+          <ul>
+            <li><a href="#phpini"><code>php.ini</code></a></li>
+            <li><a href="#php-fpmconf"><code>php-fpm.conf</code></a></li>
+            <li><a href="#php-fpmdwwwconf"><code>php-fpm.d/www.conf</code></a></li>
+          </ul>
+        </li>
+        <li><a href="#composer">Composer</a>
+          <ul>
+            <li><a href="#版本范围">版本范围</a></li>
+          </ul>
+        </li>
+        <li><a href="#laravel">Laravel</a>
+          <ul>
+            <li><a href="#laravel-nova">Laravel Nova</a></li>
+            <li><a href="#laravel-forge">Laravel Forge</a></li>
+            <li><a href="#laravel-vapor">Laravel Vapor</a></li>
+            <li><a href="#laravel-valet">Laravel Valet</a></li>
+            <li><a href="#laravel-envoy">Laravel Envoy</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
  
