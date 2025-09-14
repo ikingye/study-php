@@ -1,100 +1,144 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.4 其他 on PHP 学习笔记</title><link>https://kingye.me/study-php/docs/basic/other/</link><description>Recent content in 1.4 其他 on PHP 学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/study-php/docs/basic/other/index.xml" rel="self" type="application/rss+xml"/><item><title>版本</title><link>https://kingye.me/study-php/docs/basic/other/version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-php/docs/basic/other/version/</guid><description>&lt;h1 id="php-版本">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.4 其他 on PHP 学习笔记</title><link>https://kingye.me/study-php/docs/basic/other/</link><description>Recent content in 1.4 其他 on PHP 学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/study-php/docs/basic/other/index.xml" rel="self" type="application/rss+xml"/><item><title>版本</title><link>https://kingye.me/study-php/docs/basic/other/version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-php/docs/basic/other/version/</guid><description>&lt;h1 id="php-版本"&gt;
  PHP 版本
- &lt;a class="anchor" href="#php-%e7%89%88%e6%9c%ac">#&lt;/a>
-&lt;/h1>
-&lt;p>&lt;a href="https://github.com/php/php-src">php/php-src&lt;/a> &lt;img src="https://img.shields.io/github/stars/php/php-src.svg" alt="Github stars" />&lt;/p>
-&lt;h2 id="版本控制">
+ 
+ &lt;a class="anchor" href="#php-%e7%89%88%e6%9c%ac"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/php/php-src"&gt;php/php-src&lt;/a&gt; &lt;img src="https://img.shields.io/github/stars/php/php-src.svg" alt="Github stars" /&gt;&lt;/p&gt;
+&lt;h2 id="版本控制"&gt;
  版本控制
- &lt;a class="anchor" href="#%e7%89%88%e6%9c%ac%e6%8e%a7%e5%88%b6">#&lt;/a>
-&lt;/h2>
-&lt;hr>
-&lt;h2 id="版本历史">
+ 
+ &lt;a class="anchor" href="#%e7%89%88%e6%9c%ac%e6%8e%a7%e5%88%b6"&gt;#&lt;/a&gt;
+ 
+&lt;/h2&gt;
+&lt;hr&gt;
+&lt;h2 id="版本历史"&gt;
  版本历史
- &lt;a class="anchor" href="#%e7%89%88%e6%9c%ac%e5%8e%86%e5%8f%b2">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="80httpswwwphpnetchangelog-8phpphp_8_0">
- &lt;a href="https://www.php.net/ChangeLog-8.php#PHP_8_0">8.0&lt;/a>
- &lt;a class="anchor" href="#80httpswwwphpnetchangelog-8phpphp_8_0">#&lt;/a>
-&lt;/h3>
-&lt;h4 id="800-2020">
+ 
+ &lt;a class="anchor" href="#%e7%89%88%e6%9c%ac%e5%8e%86%e5%8f%b2"&gt;#&lt;/a&gt;
+ 
+&lt;/h2&gt;
+&lt;h3 id="80"&gt;
+ &lt;a href="https://www.php.net/ChangeLog-8.php#PHP_8_0"&gt;8.0&lt;/a&gt;
+ 
+ &lt;a class="anchor" href="#80"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;h4 id="800-2020"&gt;
  8.0.0 (2020)
- &lt;a class="anchor" href="#800-2020">#&lt;/a>
-&lt;/h4>
-&lt;hr>
-&lt;hr>
-&lt;h3 id="74httpswwwphpnetchangelog-7phpphp_7_4">
- &lt;a href="https://www.php.net/ChangeLog-7.php#PHP_7_4">7.4&lt;/a>
- &lt;a class="anchor" href="#74httpswwwphpnetchangelog-7phpphp_7_4">#&lt;/a>
-&lt;/h3>
-&lt;h4 id="748-2020-07-09">
+ 
+ &lt;a class="anchor" href="#800-2020"&gt;#&lt;/a&gt;
+ 
+&lt;/h4&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;h3 id="74"&gt;
+ &lt;a href="https://www.php.net/ChangeLog-7.php#PHP_7_4"&gt;7.4&lt;/a&gt;
+ 
+ &lt;a class="anchor" href="#74"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;h4 id="748-2020-07-09"&gt;
  7.4.8 (2020-07-09)
- &lt;a class="anchor" href="#748-2020-07-09">#&lt;/a>
-&lt;/h4>
-&lt;h4 id="740-2019-11-28">
+ 
+ &lt;a class="anchor" href="#748-2020-07-09"&gt;#&lt;/a&gt;
+ 
+&lt;/h4&gt;
+&lt;h4 id="740-2019-11-28"&gt;
  7.4.0 (2019-11-28)
- &lt;a class="anchor" href="#740-2019-11-28">#&lt;/a>
-&lt;/h4>
-&lt;hr>
-&lt;h3 id="73httpswwwphpnetchangelog-7phpphp_7_3">
- &lt;a href="https://www.php.net/ChangeLog-7.php#PHP_7_3">7.3&lt;/a>
- &lt;a class="anchor" href="#73httpswwwphpnetchangelog-7phpphp_7_3">#&lt;/a>
-&lt;/h3>
-&lt;hr>
-&lt;h3 id="72httpswwwphpnetchangelog-7phpphp_7_2">
- &lt;a href="https://www.php.net/ChangeLog-7.php#PHP_7_2">7.2&lt;/a>
- &lt;a class="anchor" href="#72httpswwwphpnetchangelog-7phpphp_7_2">#&lt;/a>
-&lt;/h3>
-&lt;hr>
-&lt;h3 id="71httpswwwphpnetchangelog-7phpphp_7_1">
- &lt;a href="https://www.php.net/ChangeLog-7.php#PHP_7_1">7.1&lt;/a>
- &lt;a class="anchor" href="#71httpswwwphpnetchangelog-7phpphp_7_1">#&lt;/a>
-&lt;/h3>
-&lt;hr>
-&lt;h3 id="70httpswwwphpnetchangelog-7phpphp_7_0">
- &lt;a href="https://www.php.net/ChangeLog-7.php#PHP_7_0">7.0&lt;/a>
- &lt;a class="anchor" href="#70httpswwwphpnetchangelog-7phpphp_7_0">#&lt;/a>
-&lt;/h3>
-&lt;hr>
-&lt;hr>
-&lt;h3 id="56httpswwwphpnetchangelog-5phpphp_5_6">
- &lt;a href="https://www.php.net/ChangeLog-5.php#PHP_5_6">5.6&lt;/a>
- &lt;a class="anchor" href="#56httpswwwphpnetchangelog-5phpphp_5_6">#&lt;/a>
-&lt;/h3>
-&lt;h4 id="5640-2019-01-10">
+ 
+ &lt;a class="anchor" href="#740-2019-11-28"&gt;#&lt;/a&gt;
+ 
+&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h3 id="73"&gt;
+ &lt;a href="https://www.php.net/ChangeLog-7.php#PHP_7_3"&gt;7.3&lt;/a&gt;
+ 
+ &lt;a class="anchor" href="#73"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h3 id="72"&gt;
+ &lt;a href="https://www.php.net/ChangeLog-7.php#PHP_7_2"&gt;7.2&lt;/a&gt;
+ 
+ &lt;a class="anchor" href="#72"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h3 id="71"&gt;
+ &lt;a href="https://www.php.net/ChangeLog-7.php#PHP_7_1"&gt;7.1&lt;/a&gt;
+ 
+ &lt;a class="anchor" href="#71"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h3 id="70"&gt;
+ &lt;a href="https://www.php.net/ChangeLog-7.php#PHP_7_0"&gt;7.0&lt;/a&gt;
+ 
+ &lt;a class="anchor" href="#70"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;h3 id="56"&gt;
+ &lt;a href="https://www.php.net/ChangeLog-5.php#PHP_5_6"&gt;5.6&lt;/a&gt;
+ 
+ &lt;a class="anchor" href="#56"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;h4 id="5640-2019-01-10"&gt;
  5.6.40 (2019-01-10)
- &lt;a class="anchor" href="#5640-2019-01-10">#&lt;/a>
-&lt;/h4>
-&lt;h3 id="55httpswwwphpnetchangelog-5phpphp_5_5">
- &lt;a href="https://www.php.net/ChangeLog-5.php#PHP_5_5">5.5&lt;/a>
- &lt;a class="anchor" href="#55httpswwwphpnetchangelog-5phpphp_5_5">#&lt;/a>
-&lt;/h3>
-&lt;h3 id="54httpswwwphpnetchangelog-5phpphp_5_4">
- &lt;a href="https://www.php.net/ChangeLog-5.php#PHP_5_4">5.4&lt;/a>
- &lt;a class="anchor" href="#54httpswwwphpnetchangelog-5phpphp_5_4">#&lt;/a>
-&lt;/h3>
-&lt;h3 id="53httpswwwphpnetchangelog-5phpphp_5_3">
- &lt;a href="https://www.php.net/ChangeLog-5.php#PHP_5_3">5.3&lt;/a>
- &lt;a class="anchor" href="#53httpswwwphpnetchangelog-5phpphp_5_3">#&lt;/a>
-&lt;/h3>
-&lt;h3 id="52httpswwwphpnetchangelog-5phpphp_5_2">
- &lt;a href="https://www.php.net/ChangeLog-5.php#PHP_5_2">5.2&lt;/a>
- &lt;a class="anchor" href="#52httpswwwphpnetchangelog-5phpphp_5_2">#&lt;/a>
-&lt;/h3>
-&lt;h3 id="51httpswwwphpnetchangelog-5phpphp_5_1">
- &lt;a href="https://www.php.net/ChangeLog-5.php#PHP_5_1">5.1&lt;/a>
- &lt;a class="anchor" href="#51httpswwwphpnetchangelog-5phpphp_5_1">#&lt;/a>
-&lt;/h3>
-&lt;h3 id="50httpswwwphpnetchangelog-5phpphp_5_0">
- &lt;a href="https://www.php.net/ChangeLog-5.php#PHP_5_0">5.0&lt;/a>
- &lt;a class="anchor" href="#50httpswwwphpnetchangelog-5phpphp_5_0">#&lt;/a>
-&lt;/h3>
-&lt;hr>
-&lt;hr>
-&lt;h3 id="44httpswwwphpnetchangelog-4phpphp_4_4">
- &lt;a href="https://www.php.net/ChangeLog-4.php#PHP_4_4">4.4&lt;/a>
- &lt;a class="anchor" href="#44httpswwwphpnetchangelog-4phpphp_4_4">#&lt;/a>
-&lt;/h3>
-&lt;h4 id="449-2008-08-07">
+ 
+ &lt;a class="anchor" href="#5640-2019-01-10"&gt;#&lt;/a&gt;
+ 
+&lt;/h4&gt;
+&lt;h3 id="55"&gt;
+ &lt;a href="https://www.php.net/ChangeLog-5.php#PHP_5_5"&gt;5.5&lt;/a&gt;
+ 
+ &lt;a class="anchor" href="#55"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;h3 id="54"&gt;
+ &lt;a href="https://www.php.net/ChangeLog-5.php#PHP_5_4"&gt;5.4&lt;/a&gt;
+ 
+ &lt;a class="anchor" href="#54"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;h3 id="53"&gt;
+ &lt;a href="https://www.php.net/ChangeLog-5.php#PHP_5_3"&gt;5.3&lt;/a&gt;
+ 
+ &lt;a class="anchor" href="#53"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;h3 id="52"&gt;
+ &lt;a href="https://www.php.net/ChangeLog-5.php#PHP_5_2"&gt;5.2&lt;/a&gt;
+ 
+ &lt;a class="anchor" href="#52"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;h3 id="51"&gt;
+ &lt;a href="https://www.php.net/ChangeLog-5.php#PHP_5_1"&gt;5.1&lt;/a&gt;
+ 
+ &lt;a class="anchor" href="#51"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;h3 id="50"&gt;
+ &lt;a href="https://www.php.net/ChangeLog-5.php#PHP_5_0"&gt;5.0&lt;/a&gt;
+ 
+ &lt;a class="anchor" href="#50"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;h3 id="44"&gt;
+ &lt;a href="https://www.php.net/ChangeLog-4.php#PHP_4_4"&gt;4.4&lt;/a&gt;
+ 
+ &lt;a class="anchor" href="#44"&gt;#&lt;/a&gt;
+ 
+&lt;/h3&gt;
+&lt;h4 id="449-2008-08-07"&gt;
  4.4.9 (2008-08-07)
- &lt;a class="anchor" href="#449-2008-08-07">#&lt;/a>
-&lt;/h4></description></item></channel></rss>
+ 
+ &lt;a class="anchor" href="#449-2008-08-07"&gt;#&lt;/a&gt;
+ 
+&lt;/h4&gt;</description></item></channel></rss>

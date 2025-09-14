@@ -1,5 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3.3 运行时 on PHP 学习笔记</title><link>https://kingye.me/study-php/docs/code/runtime/</link><description>Recent content in 3.3 运行时 on PHP 学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/study-php/docs/code/runtime/index.xml" rel="self" type="application/rss+xml"/><item><title>GC</title><link>https://kingye.me/study-php/docs/code/runtime/gc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-php/docs/code/runtime/gc/</guid><description>&lt;h1 id="php-gc">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3.3 运行时 on PHP 学习笔记</title><link>https://kingye.me/study-php/docs/code/runtime/</link><description>Recent content in 3.3 运行时 on PHP 学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/study-php/docs/code/runtime/index.xml" rel="self" type="application/rss+xml"/><item><title>GC</title><link>https://kingye.me/study-php/docs/code/runtime/gc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-php/docs/code/runtime/gc/</guid><description>&lt;h1 id="php-gc"&gt;
  PHP GC
- &lt;a class="anchor" href="#php-gc">#&lt;/a>
-&lt;/h1>
-&lt;p>&lt;code>Garbage Collection&lt;/code>&lt;/p></description></item></channel></rss>
+ 
+ &lt;a class="anchor" href="#php-gc"&gt;#&lt;/a&gt;
+ 
+&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;Garbage Collection&lt;/code&gt;&lt;/p&gt;</description></item></channel></rss>
