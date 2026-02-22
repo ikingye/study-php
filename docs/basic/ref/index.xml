@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.1 语法 on PHP 学习笔记</title><link>https://kingye.me/study-php/docs/basic/ref/</link><description>Recent content in 1.1 语法 on PHP 学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/study-php/docs/basic/ref/index.xml" rel="self" type="application/rss+xml"/><item><title>关键字</title><link>https://kingye.me/study-php/docs/basic/ref/keyword/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-php/docs/basic/ref/keyword/</guid><description>&lt;h1 id="php-关键字"&gt;
- PHP 关键字
- 
- &lt;a class="anchor" href="#php-%e5%85%b3%e9%94%ae%e5%ad%97"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;</description></item><item><title>数据结构</title><link>https://kingye.me/study-php/docs/basic/ref/datastruct/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-php/docs/basic/ref/datastruct/</guid><description>&lt;h1 id="php-数据结构"&gt;
- PHP 数据结构
- 
- &lt;a class="anchor" href="#php-%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84"&gt;#&lt;/a&gt;
- 
-&lt;/h1&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1.1 语法 on PHP 学习笔记</title><link>https://kingye.me/study-php/docs/basic/ref/</link><description>Recent content in 1.1 语法 on PHP 学习笔记</description><generator>Hugo</generator><language>en</language><atom:link href="https://kingye.me/study-php/docs/basic/ref/index.xml" rel="self" type="application/rss+xml"/><item><title>关键字</title><link>https://kingye.me/study-php/docs/basic/ref/keyword/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-php/docs/basic/ref/keyword/</guid><description>&lt;h1 id="php-关键字"&gt;PHP 关键字&lt;a class="anchor" href="#php-%e5%85%b3%e9%94%ae%e5%ad%97"&gt;#&lt;/a&gt;&lt;/h1&gt;</description></item><item><title>数据结构</title><link>https://kingye.me/study-php/docs/basic/ref/datastruct/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kingye.me/study-php/docs/basic/ref/datastruct/</guid><description>&lt;h1 id="php-数据结构"&gt;PHP 数据结构&lt;a class="anchor" href="#php-%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84"&gt;#&lt;/a&gt;&lt;/h1&gt;</description></item></channel></rss>
